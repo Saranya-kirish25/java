@@ -1,0 +1,28 @@
+public class Main {
+    public static int[] twoSum(int[] nums, int target) {
+       
+        for (int i = 0; i < nums.length; i++) {
+            // Check the sum with every subsequent element
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    return new int[] {i, j};  // Return indices of the two numbers
+                }
+            }
+        }
+        return new int[] {};  // Return an empty array if no solution is found
+    }
+    
+    public static void main(String[] args) {
+        int[] nums = {2,6,8,3};
+        int target = 9;
+        
+        // Call the twoSum function
+        int[] result = twoSum(nums, target);
+        
+        if (result.length == 0) {
+            System.out.println("No solution found");
+        } else {
+            System.out.println("Indices: " + result[0] + ", " + result[1]);
+        }
+    }
+}
