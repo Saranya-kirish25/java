@@ -1,0 +1,48 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+     Scanner scan=new Scanner(System.in);
+     int row=scan.nextInt();
+     int col=scan.nextInt();
+     int mat[][]=new int[row][col];
+     int tran[][]=new int[col][row];
+     
+     for(int i=0;i<row;i++){
+         for(int j=0;j<col;j++){
+             System.out.print("enter:"+" "+i+" "+j+": ");
+             mat[i][j]=scan.nextInt();
+         }
+     }
+     
+      for(int i=0;i<row;i++){
+         for(int j=0;j<col;j++){
+            tran[j][i]= mat[i][j];
+         }
+     }
+     
+     System.out.println("this is matrix");
+      for(int i=0;i<row;i++){
+         for(int j=0;j<col;j++){
+             
+             System.out.print(mat[i][j]+" ");
+             }
+          System.out.println();   
+     }
+     
+      System.out.println("this is trans");
+      for(int i=0;i<row;i++){
+         for(int j=0;j<col;j++){
+            
+             System.out.print(tran[i][j]+" ");
+             }
+          System.out.println();   
+     }
+     
+     
+     
+     
+     
+     
+     
+    }
+}
