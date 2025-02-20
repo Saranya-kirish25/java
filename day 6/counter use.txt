@@ -1,0 +1,20 @@
+class counter{
+    static int count;
+    
+    counter(){
+        count++;
+         System.out.println("object created ! current count"+count);
+    }
+   
+}
+
+class Main{
+    public static void main(String args[]){
+        counter obj1=new counter();
+        counter obj2=new counter();
+        counter obj3=new counter();
+        
+        
+    }
+}
+

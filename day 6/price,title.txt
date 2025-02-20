@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class book{
+    String title;
+    float price;
+    
+   book(String title,float price){
+        this.title=title;
+        this.price=price;
+        
+    }
+    void display(){
+        System.out.println("Book Title:"+title);
+        System.out.println("Book price:"+price);
+        
+        
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    String t =scan.nextLine();
+	    float p=scan.nextfloat();
+	    book obj=new book(t,p);
+	    
+	    obj.display();
+		
+	}
+}

@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class person{
+    String name;
+    int reg;
+    
+   person(String name,int reg){
+        this.name=name;
+        this.reg=reg;
+        
+    }
+    void display(){
+        System.out.print(name);
+        System.out.print(reg);
+        
+        
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    String n=scan.nextLine();
+	    int r=scan.nextInt();
+	    person obj=new person(n,r);
+	    
+	    obj.display();
+		
+	}
+}

@@ -1,0 +1,23 @@
+class car{
+    String brand;
+    
+    car(){
+       this.brand="unknown"; 
+    }
+    
+    void setbrand(String brand){
+        
+        this.brand=brand;
+    }
+    void display(){
+        System.out.print(brand);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        car obj=new car();
+        obj.setbrand("apple");
+        obj.display();
+        
+    }
+}

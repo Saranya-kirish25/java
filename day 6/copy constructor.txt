@@ -1,0 +1,33 @@
+class book{
+    int title;
+    int price;
+    
+    book(int title,int price){
+        this.title=title;
+        this.price=price;
+    }
+    
+    book(book ab){
+        this.title=ab.title;
+        this.price=ab.price;
+    }
+    
+    void display(){
+        System.out.println(title);
+        System.out.println(price);
+    }
+    
+    
+}
+
+class Main{
+    public static void main(String args[]){
+        book obj=new book(100,200);
+        book obj2=new book(obj);
+        obj.display();
+        obj2.display();
+        
+    }
+}
+
+

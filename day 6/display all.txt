@@ -1,0 +1,41 @@
+class carrental{
+    int carId;
+    String style;
+    float rent;
+    
+    void getcar(int carId,String style){
+        this.carId=carId;
+        this.style=style;
+        
+    }
+    void getrent(){
+        this.rent=rent;
+        
+    }
+    void showcar(){
+        System.out.println("this is carId:"+carId);
+        System.out.println("this is style:"+style);
+        System.out.println("this is rent:"+rent);
+        
+    }
+}
+
+class Main{
+    public static void main(String args[]){
+   // carrental obj=new carrental();  
+     carrental smallcar=new  carrental();
+      smallcar.getcar(4,"kuttyyyy");
+      smallcar.rent=30.0f;
+      smallcar.showcar();
+    
+     carrental van=new  carrental();
+     van.getcar(5,"van");
+     van.rent=40.0f;
+     van.showcar();
+     
+     carrental suv=new  carrental();
+     suv.getcar(6,"suvv");
+     suv.rent=50.0f;
+     suv.showcar();
+    }
+}

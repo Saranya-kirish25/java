@@ -1,0 +1,26 @@
+class book{
+    String title;
+    String autor;
+    int price;
+    
+    book(String title,String autor,int price){
+        this.title=title;
+        this.autor=autor;
+        this.price=price;
+    }
+    
+    void display(){
+        System.out.println(title);
+        System.out.println(autor);
+         System.out.println(price);
+    }
+    
+    
+}
+
+class Main{
+    public static void main(String args[]){
+        book obj=new book("comedy","vadivel",100);
+        obj.display();
+    }
+}

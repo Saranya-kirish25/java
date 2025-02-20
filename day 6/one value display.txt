@@ -1,0 +1,60 @@
+import java.util.Scanner;
+class cars{
+    int id;
+    String style;
+    float rent;
+    
+    cars(){
+        this.id=id;
+        this.style=style;
+        this.rent=rent;
+    }
+    
+    
+    void getcar(String n){
+        if(n.equals("small car")){
+            id=4;
+            style="yellow car";
+        }
+       else if(n.equals("van")){
+            id=6;
+            style="big van";
+        }
+     else if(n.equals("suv")){
+         id=8;
+         style="suv";
+     }
+        
+    }
+    
+    void getrent(String n){
+         if(n.equals("small car")){
+           rent=1000;
+        }
+       else if(n.equals("van")){
+           rent=800;
+       }
+     else if(n.equals("suv")){
+         rent=2500;
+     }
+    }
+    
+void display(){
+    System.out.println(id);
+    System.out.println(style);
+    System.out.println(rent);
+}
+    
+}
+
+
+class Main{
+    public static void main(String args[]){
+        Scanner scan=new Scanner(System.in);
+        String n=scan.nextLine();
+        cars obj1=new cars();
+        obj1. getcar(n);
+         obj1. getrent(n);
+         obj1.display();
+    }
+}
