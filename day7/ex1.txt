@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Add{
+    public int a;
+    public int b;
+    public int c;
+    
+    public void display(){
+       System.out.println(c);
+  }
+    
+}
+public class Main {
+    public static void main(String[] args) {
+        Add ob=new Add();
+        Scanner scan=new Scanner(System.in);
+        ob.a=scan.nextInt();
+        ob.b=scan.nextInt();
+        ob.c=ob.a+ob.b;
+        ob.display();
+    }
+}

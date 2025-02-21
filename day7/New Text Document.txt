@@ -1,0 +1,61 @@
+import java.util.Scanner;
+class cal{
+   
+    
+ public void add(){
+        System.out.println("add");
+        Scanner scan=new Scanner(System.in);
+         System.out.println("add a:");
+        int a=scan.nextInt();
+         System.out.println("add b:");
+        int b=scan.nextInt();
+        System.out.println(a+b);
+        
+    }
+    
+    
+ public int diff(){
+      System.out.println("diff");
+      Scanner scan=new Scanner(System.in);
+        System.out.println("diff a:");
+        int a=scan.nextInt();
+         System.out.println("diff b:");
+        int b=scan.nextInt();
+        return a-b;
+       
+        
+    }
+    
+    
+    
+ public void mul(int a,int b){
+      System.out.println("mul");
+     System.out.println(a*b);
+     }
+    
+    
+ public int div(int a,int b){
+      System.out.println("div");
+   return a/b;
+     
+       
+    }
+    
+}
+public class Main {
+    public static void main(String[] args) {
+        cal ob=new cal();
+        Scanner scan=new Scanner(System.in);
+         System.out.println("enter a:");
+        int a=scan.nextInt();
+         System.out.println("enter b:");
+        int b=scan.nextInt();
+        ob.add();
+        int d=ob.diff();
+         System.out.println(d);
+        ob.mul(a,b);
+        int di=ob.div(a,b);
+         System.out.println(di);
+        
+    }
+}

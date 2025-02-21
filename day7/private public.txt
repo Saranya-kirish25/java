@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Add{
+    private int a;
+    private int b;
+     private int c;
+    
+    public void sum(){
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        int c=a+b;
+         
+  
+    }
+    
+}
+public class Main {
+    public static void main(String[] args) {
+        Add ob=new Add();
+        ob.sum();
+    }
+}

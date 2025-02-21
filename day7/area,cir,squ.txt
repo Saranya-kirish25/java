@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class outer{
+    static class inner{
+        static void namearea(int a,int b){
+            System.out.println(a*b);
+            
+        }
+        static void namearea(float r){
+             System.out.println(3.14*r*r);
+            
+        }
+         static void namearea(int a){
+              System.out.println(a*a);
+      }
+        
+      }
+    }
+ 
+
+class Main{
+    public static void main(String args[]){
+        Scanner scan=new Scanner(System.in);
+        System.out.println("enter a for reg:");
+        int a=scan.nextInt();
+        System.out.println("enter b for cir:");
+        int b=scan.nextInt();
+        System.out.println("enter c for squ:");
+        float r=scan.nextFloat();
+        outer.inner.namearea(a,b);
+        outer.inner.namearea(r);
+         outer.inner.namearea(a);
+       
+        
+        
+        
+    }
+}

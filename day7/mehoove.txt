@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class first {
+	private int a=10;
+	private int b=20;
+
+	public int getA() {
+		return a;
+	}
+
+	public int getB() {
+		return b;
+	}
+
+
+
+}
+class sec extends first {
+	public void display() {
+		System.out.println(getA()+getB());
+
+	}
+
+
+}
+
+
+
+class Main {
+	public static void main(String args[]) {
+		sec ob=new sec();
+		ob.display();
+
+
+
+	}
+}
