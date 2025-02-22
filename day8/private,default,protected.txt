@@ -1,0 +1,27 @@
+class supermost{
+    private int a=10;
+    public void display(){
+         System.out.println(a);
+    }
+}
+
+class Super extends supermost{
+    protected int b=20;
+}
+
+class sub extends Super{
+    int c=30;
+}
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    sub ob=new sub();
+	     System.out.println(ob.b);
+	     ob.display();
+	     System.out.print(ob.c);
+	   
+	
+	}
+}
