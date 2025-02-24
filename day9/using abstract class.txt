@@ -1,0 +1,32 @@
+abstract class Shape {
+    abstract double calculateArea();
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+       
+        Shape circle = new Shape() {
+            double radius = 5; 
+
+            @Override
+            double calculateArea() {
+                return Math.PI * radius * radius; 
+            }
+        };
+
+       
+        Shape square = new Shape() {
+            double side = 4;
+
+            @Override
+            double calculateArea() {
+                return side * side; 
+            }
+        };
+        
+        
+        System.out.println("Area of Circle: " + circle.calculateArea());
+        System.out.println("Area of Square: " + square.calculateArea());
+    }
+}

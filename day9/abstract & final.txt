@@ -1,0 +1,33 @@
+//create abstra cls which contain find & static member that should not be initialize during declaration
+// Abstract class with a static member and an abstract method 'find'
+abstract class MyAbstractClass {
+
+   static int staticMember;
+   public abstract void find();
+
+    static {
+       
+        staticMember = 100; 
+        System.out.println("Static member initialized to: " + staticMember);
+    }
+       public static void displayStaticMember() {
+        System.out.println("Static member value: " + staticMember);
+    }
+}
+class ConcreteClass extends MyAbstractClass {
+
+    @Override
+    public void find() {
+        System.out.println("The 'find' method is implemented in ConcreteClass.");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        
+        MyAbstractClass.displayStaticMember();
+
+        
+        ConcreteClass obj = new ConcreteClass();
+        obj.find();
+    }
+}
