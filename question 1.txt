@@ -1,0 +1,41 @@
+public class Main{
+    public static void main(String[] args) {
+        int[][] a = {
+            {5, 4, 7},
+            {1, 8, 3},
+            {9, 6, 2}
+        };
+
+        int fmax=a[0][0];
+        for(int i=0;i<a.length;i++){
+            for(int j=0;j<a[i].length;j++){
+                if(fmax<a[i][j]){
+                    fmax=a[i][j];
+                }
+            }
+        }
+        
+        
+        int smax=a[0][0];
+        for(int i=0;i<a.length;i++){
+            for(int j=0;j<a[i].length;j++){
+                if(smax<a[i][j] && fmax>a[i][j]){
+                    smax=a[i][j];
+                }
+            }
+        }
+        
+        
+        int tmax=a[0][0];
+        for(int i=0;i<a.length;i++){
+            for(int j=0;j<a[i].length;j++){
+                if(tmax<a[i][j] && smax>a[i][j]){
+                    tmax=a[i][j];
+                }
+            }
+        }
+        
+        System.out.println(tmax);
+
+    }
+}
